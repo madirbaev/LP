@@ -1,15 +1,17 @@
-// Короткая демонстрация использования пакета.
+// Класс Book, переписанный для открытого доступа.
 package bookpack;
-class Book {
+public class Book {
 	private String title;
 	private String author;
 	private int pubDate;
-	Book(String t, String a, int d) {
+	// Теперь открытый.
+	public Book(String t, String a, int d) {
 		title = t;
 		author = a;
 		pubDate = d;
 	}
-	void show() {
+	// Теперь открытый.
+	public void show() {
 		System.out.println(title);
 		System.out.println(author);
 		System.out.println(pubDate);
